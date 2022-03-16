@@ -1,3 +1,5 @@
+<img src="relative/path/in/repository/to/image.svg" width="128"/>
+
 Show amazing TOAST
 # Dependencies 
 Add it in your root build.gradle at the end of repositories:
