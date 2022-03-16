@@ -1,4 +1,4 @@
-![Alt text](https://drive.google.com/file/d/1JYeIFuRufwDhe3arjbAiq9hsKwXXLfD1/view?usp=sharing "Optional title")
+![Alt text](https://www.tutorialspoint.com/images/QAicon.png "Optional title")
 
 # Show amazing TOAST
 # Dependencies 
