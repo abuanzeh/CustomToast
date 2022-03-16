@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        ToasterMessage.showErrorMessage(this , "ERROR")
+        ToasterMessage.showSuccessMessage(this , "SUCCESS")
     }
 }
