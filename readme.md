@@ -1,5 +1,8 @@
-<img src="https://drive.google.com/file/d/1JYeIFuRufwDhe3arjbAiq9hsKwXXLfD1/view?usp=sharing" width="128"/>
-
+<img src=" width="128"/>
+<a href="https://www.qries.com/">
+         <img alt="Qries" src=""https://drive.google.com/file/d/1JYeIFuRufwDhe3arjbAiq9hsKwXXLfD1/view?usp=sharing"
+         width=150" height="70">
+      </a>
 Show amazing TOAST
 # Dependencies 
 Add it in your root build.gradle at the end of repositories:
