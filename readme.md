@@ -1,7 +1,4 @@
-<img src=" width="128"/>
-
-         <img alt="Qries" src=""https://drive.google.com/file/d/1JYeIFuRufwDhe3arjbAiq9hsKwXXLfD1/view?usp=sharing"
-         width=150" height="70">
+# <img alt="Qries" src=""https://drive.google.com/file/d/1JYeIFuRufwDhe3arjbAiq9hsKwXXLfD1/view?usp=sharing"width=150" height="70">
       
 Show amazing TOAST
 # Dependencies 
