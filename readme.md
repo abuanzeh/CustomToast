@@ -25,6 +25,7 @@ Get your Toast
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        ToasterMessage.show(this , "TEST")
+        ToasterMessage.showSuccessMessage(this,"SUCCESS")
+        ToasterMessage.showErrorMessage(this,"ERROR")
 
     }
