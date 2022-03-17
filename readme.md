@@ -17,17 +17,31 @@ allprojects {
 ```
 Add the dependency :
 ```
-implementation 'com.github.abuanzeh:AnzehLibrary:1.0.2'
+implementation 'com.github.abuanzeh:AnzehLibrary:1.0.3'
 ```
-# Example 
+# Example on Success Toast       
+ToasterMessage.Builder() <br/>
+            .setContext(context)  <br/>
+            .setMessage("YOUR MESSAGE HERE") <br/>
+            .setSuccessBackgroundColor(R.color.cusom_color) // set custom background color default is green color <br/>
+            .setCornerRadius(50) //  set custom corner radius if you want <br/>
+            .setSuccessIcon(R.drawable.ic_check) // set success custom image   <br/>
+            .setGravityOfMessage(Gravity.TOP) // Where to display the message Gravity.TOP or Gravity.BOTTOM <br/>
+            .setDuration(Toast.LENGTH_SHORT) // Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG <br/>
+            .build() <br/>
+            .showMessage() <br/>
+	    
+	    
+# Example on Error Toast       
+ToasterMessage.Builder() <br/>
+            .setContext(context) <br/>
+            .setMessage("YOUR MESSAGE HERE") <br/>
+            .setFieldBackgroundColor(R.color.cusom_color)  // set custom background color default is red color <br/>
+            .setCornerRadius(50) //  set custom corner radius if you want <br/>
+            .setFieldIcon(R.drawable.ic_check) // set success custom image <br/>
+            .setGravityOfMessage(Gravity.TOP) // Where to display the message Gravity.TOP or Gravity.BOTTOM <br/>
+            .setDuration(Toast.LENGTH_SHORT) // Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG <br/>
+            .build() <br/>
+            .showMessage() <br/>
 
-Get your Toast
-``` kotlin 
- override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        ToasterMessage.showSuccessMessage(this,"SUCCESS")
-        ToasterMessage.showErrorMessage(this,"ERROR")
-
-    }
+   
