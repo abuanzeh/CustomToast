@@ -89,8 +89,8 @@ open class ToasterMessage private constructor(
         private var cornerRadius: Int? = null
         private var successIcon: Int? = R.drawable.ic_check
         private var fieldIcon: Int? = R.drawable.ic_close
-        private var backgroundColorSuccess: Int? = R.color.green
-        private var backgroundColorField: Int? = R.color.red
+        private var backgroundColorSuccess: Int? = null
+        private var backgroundColorField: Int? = null
 
         fun setGravityOfMessage(gravityOfMessage: Int): Builder {
             this.gravityOfMessage = gravityOfMessage
