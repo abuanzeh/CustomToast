@@ -19,15 +19,29 @@ Add the dependency :
 ```
 implementation 'com.github.abuanzeh:AnzehLibrary:1.0.2'
 ```
-# Example 
+# Example on Success Toast       
+ToasterMessage.Builder()
+            .setContext(context)  
+            .setMessage("YOUR MESSAGE HERE") 
+            .setSuccessBackgroundColor(R.color.cusom_color) // set custom background color default is green color
+            .setCornerRadius(50) //  set custom corner radius if you want 
+            .setSuccessIcon(R.drawable.ic_check) // set success custom image   
+            .setGravityOfMessage(Gravity.TOP) // Where to display the message Gravity.TOP or Gravity.BOTTOM
+            .setDuration(Toast.LENGTH_SHORT) // Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG
+            .build()
+            .showMessage()
+	    
+	    
+# Example on Error Toast       
+ToasterMessage.Builder()
+            .setContext(context)
+            .setMessage("YOUR MESSAGE HERE")
+            .setFieldBackgroundColor(R.color.cusom_color)  // set custom background color default is red color
+            .setCornerRadius(50) //  set custom corner radius if you want
+            .setFieldIcon(R.drawable.ic_check) // set success custom image
+            .setGravityOfMessage(Gravity.TOP) // Where to display the message Gravity.TOP or Gravity.BOTTOM
+            .setDuration(Toast.LENGTH_SHORT) // Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG
+            .build()
+            .showMessage()
 
-Get your Toast
-``` kotlin 
- override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        ToasterMessage.showSuccessMessage(this,"SUCCESS")
-        ToasterMessage.showErrorMessage(this,"ERROR")
-
-    }
+   
