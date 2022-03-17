@@ -20,7 +20,7 @@ Add the dependency :
 implementation 'com.github.abuanzeh:AnzehLibrary:1.0.2'
 ```
 # Example on Success Toast       
-ToasterMessage.Builder() \n
+ToasterMessage.Builder() 
             .setContext(context)  
             .setMessage("YOUR MESSAGE HERE") 
             .setSuccessBackgroundColor(R.color.cusom_color) // set custom background color default is green color
