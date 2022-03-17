@@ -27,24 +27,23 @@
                 android:id="@+id/clToast"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/tvToastMessage"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginEnd="@dimen/_40sdp"
-                    android:layout_marginBottom="@dimen/_10sdp"
                     android:gravity="center"
-                    android:textColor="#ffffff"
                     android:textAllCaps="false"
+                    android:textColor="#ffffff"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imgToastImage"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:text="Toast" />
+                    tools:text="Toast " />
 
                 <ImageView
                     android:id="@+id/imgToastImage"

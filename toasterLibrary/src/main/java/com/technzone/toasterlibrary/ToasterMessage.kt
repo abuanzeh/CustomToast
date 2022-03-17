@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.widget.Toast
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import com.technzone.toasterlibrary.databinding.CustemToastViewBinding
@@ -44,7 +45,8 @@ open class ToasterMessage private constructor(
 
 
     fun showMessage() {
-        val toast = Toast(builder.getContext())
+
+        val toast = Toast(context)
 
         fieldIcon?.let { binding.imgToastImage.setImageResource(it) }
 
@@ -75,6 +77,9 @@ open class ToasterMessage private constructor(
             0,
             0
         )
+
+
+
 
         toast.duration = duration
         toast.show()
