@@ -33,15 +33,15 @@ ToasterMessage.Builder() <br/>
 	    
 	    
 # Example on Error Toast       
-ToasterMessage.Builder()
-            .setContext(context)
-            .setMessage("YOUR MESSAGE HERE")
-            .setFieldBackgroundColor(R.color.cusom_color)  // set custom background color default is red color
-            .setCornerRadius(50) //  set custom corner radius if you want
-            .setFieldIcon(R.drawable.ic_check) // set success custom image
-            .setGravityOfMessage(Gravity.TOP) // Where to display the message Gravity.TOP or Gravity.BOTTOM
-            .setDuration(Toast.LENGTH_SHORT) // Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG
-            .build()
-            .showMessage()
+ToasterMessage.Builder() <br/>
+            .setContext(context) <br/>
+            .setMessage("YOUR MESSAGE HERE") <br/>
+            .setFieldBackgroundColor(R.color.cusom_color)  // set custom background color default is red color <br/>
+            .setCornerRadius(50) //  set custom corner radius if you want <br/>
+            .setFieldIcon(R.drawable.ic_check) // set success custom image <br/>
+            .setGravityOfMessage(Gravity.TOP) // Where to display the message Gravity.TOP or Gravity.BOTTOM <br/>
+            .setDuration(Toast.LENGTH_SHORT) // Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG <br/>
+            .build() <br/>
+            .showMessage() <br/>
 
    
