@@ -40,15 +40,22 @@ implementation 'com.github.abuanzeh:AnzehLibrary:1.0.4'
 
 	    
 # Example on Error Toast       
-ToasterMessage.Builder() <br/>
-            .setContext(context) <br/>
-            .setMessage("YOUR MESSAGE HERE") <br/>
-            .setFieldBackgroundColor(R.color.cusom_color)  // set custom background color default is red color <br/>
-            .setCornerRadius(50) //  set custom corner radius if you want <br/>
-            .setFieldIcon(R.drawable.ic_check) // set success custom image <br/>
-            .setGravityOfMessage(Gravity.TOP) // Where to display the message Gravity.TOP or Gravity.BOTTOM <br/>
-            .setDuration(Toast.LENGTH_SHORT) // Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG <br/>
-            .build() <br/>
-            .showMessage() <br/>
+   ToasterMessage.Builder() 
+            //set context  
+            .setContext(context)
+            //set Your Message  
+            .setMessage("YOUR MESSAGE HERE")
+            //set custom background color default is green color 
+            .getFieldBackgroundColor(R.color.cusom_color)
+            //set custom corner radius if you want  
+            .setCornerRadius(50)
+            //set success custom icon 
+            .setFieldIcon(R.drawable.ic_check)
+            //Where to display the message Gravity.TOP or Gravity.BOTTOM 
+            .setGravityOfMessage(Gravity.TOP)
+            //Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG  
+            .setDuration(Toast.LENGTH_SHORT)
+            .build() 
+            .showMessage()
 
    
