@@ -12,12 +12,13 @@ import com.technzone.toasterlibrary.utils.dpToPixels
 
 
 open class ToasterMessage private constructor(
-    private var builder: Builder,
+   builder: Builder,
 ) {
     private var context: Context? = null
     private var message: String? = null
     private var cornerRadius: Int? = null
     private var successIcon: Int? = null
+    private var textColor: Int? = null
     private var fieldIcon: Int? = null
     private var backgroundSuccessColor: Int? = null
     private var backgroundSuccessField: Int? = null
@@ -38,6 +39,7 @@ open class ToasterMessage private constructor(
         successIcon = builder.getSuccessIcon()
         fieldIcon = builder.getFieldIcon()
         gravityOfMessage = builder.getGravityOfMessage()
+        textColor = builder.getTextColor()
         duration = builder.getsDuration()
         backgroundSuccessColor = builder.getSuccessBackgroundColor()
         backgroundSuccessField = builder.getFieldBackgroundColor()
@@ -49,26 +51,38 @@ open class ToasterMessage private constructor(
         val toast = Toast(context)
 
         fieldIcon?.let { binding.imgToastImage.setImageResource(it) }
+        textColor?.let { binding.tvToastMessage.setTextColor(ContextCompat.getColor(context!! , it)) }
 
         backgroundSuccessField?.let {
-            binding.clToast.setBackgroundColor(
+            context?.let { it1 ->
                 ContextCompat.getColor(
-                    context!!, it
+                    it1, it
                 )
-            )
+            }?.let { it2 ->
+                binding.clToast.setBackgroundColor(
+                    it2
+                )
+            }
         }
+
 
         backgroundSuccessColor?.let {
-            binding.clToast.setBackgroundColor(
+            context?.let { it1 ->
                 ContextCompat.getColor(
-                    context!!, it
+                    it1, it
                 )
-            )
+            }?.let { it2 ->
+                binding.clToast.setBackgroundColor(
+                    it2
+                )
+            }
         }
 
-        cornerRadius?.let {
+        cornerRadius?.let { it ->
             binding.cvToast.radius = context?.let { it1 -> it.dpToPixels(it1) }!!
         }
+
+
 
         binding.tvToastMessage.text = message
         toast.view = binding.root
@@ -77,9 +91,6 @@ open class ToasterMessage private constructor(
             0,
             0
         )
-
-
-
 
         toast.duration = duration
         toast.show()
@@ -93,6 +104,7 @@ open class ToasterMessage private constructor(
         private var duration: Int = Toast.LENGTH_SHORT
         private var cornerRadius: Int? = null
         private var successIcon: Int? = R.drawable.ic_check
+        private var textColor: Int? = null
         private var fieldIcon: Int? = R.drawable.ic_close
         private var backgroundColorSuccess: Int? = null
         private var backgroundColorField: Int? = null
@@ -104,6 +116,15 @@ open class ToasterMessage private constructor(
 
         fun getGravityOfMessage(): Int {
             return gravityOfMessage
+        }
+
+        fun setTextColor(textColor: Int): Builder {
+            this.textColor = textColor
+            return this
+        }
+
+        fun getTextColor(): Int? {
+            return textColor
         }
 
         fun setDuration(duration: Int): Builder {

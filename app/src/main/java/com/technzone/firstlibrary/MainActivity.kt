@@ -11,14 +11,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-                ToasterMessage.Builder()
-                    .setContext(this)
-                    .setMessage("YOUR MESSAGE HERE")
-                    .setCornerRadius(10) //  set custom corner radius if you want
-                    .setFieldIcon(com.technzone.toasterlibrary.R.drawable.ic_check) // set success custom image
-                    .setGravityOfMessage(Gravity.BOTTOM) // Where to display the message Gravity.TOP or Gravity.BOTTOM
-                    .setDuration(Toast.LENGTH_SHORT) // Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG
-                    .build()
-                    .showMessage()
+        ToasterMessage.Builder()
+            //set context
+            .setContext(this)
+            //set Your Message
+            .setMessage("YOUR MESSAGE HERE")
+            //set Text Color
+            .setTextColor(R.color.black)
+            //set custom corner radius if you want
+            .setCornerRadius(10)
+            // set success custom image
+            .setFieldIcon(com.technzone.toasterlibrary.R.drawable.ic_check)
+            // Where to display the message Gravity.TOP or Gravity.BOTTOM of screen
+            .setGravityOfMessage(Gravity.BOTTOM)
+            // Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG
+            .setDuration(Toast.LENGTH_SHORT)
+            .build()
+            .showMessage()
     }
 }
