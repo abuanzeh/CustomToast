@@ -20,23 +20,23 @@ Add the dependency :
 implementation 'com.github.abuanzeh:AnzehLibrary:1.0.4'
 ```
 # Example on Success Toast       
-       ToasterMessage.Builder()  <br/>
-            //set context  <br/>
+       ToasterMessage.Builder()  
+            //set context  
             .setContext(context)
-            //set Your Message  <br/>
+            //set Your Message 
             .setMessage("YOUR MESSAGE HERE")
-            //set custom background color default is green color  <br/>
+            //set custom background color default is green color  
             .setSuccessBackgroundColor(R.color.cusom_color)
-            //set custom corner radius if you want  <br/>
+            //set custom corner radius if you want  
             .setCornerRadius(50)
-            //set success custom icon  <br/>
+            //set success custom icon  
             .setSuccessIcon(R.drawable.ic_check)
-            //Where to display the message Gravity.TOP or Gravity.BOTTOM  <br/>
+            //Where to display the message Gravity.TOP or Gravity.BOTTOM  
             .setGravityOfMessage(Gravity.TOP)
-            //Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG  <br/>
+            //Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG 
             .setDuration(Toast.LENGTH_SHORT)
-            .build()  <br/> 
-            .showMessage() <br/>
+            .build()  
+            .showMessage()
 
 	    
 # Example on Error Toast       
