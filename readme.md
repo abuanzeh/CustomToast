@@ -17,7 +17,8 @@ allprojects {
 ```
 Add the dependency :
 ```
-implementation 'com.github.abuanzeh:AnzehLibrary:1.0.4'
+implementation 'com.github.abuanzeh:AnzehLibrary:1.0.5'
+
 ```
 # Example on Success Toast       
        ToasterMessage.Builder()  
