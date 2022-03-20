@@ -11,13 +11,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
         ToasterMessage.Builder()
             //set context
             .setContext(this)
             //set Your Message
             .setMessage("YOUR MESSAGE HERE")
             //set Text Color
-            .setTextColor(R.color.black)
+            .setFieldBackgroundColor(R.color.black)
             //set custom corner radius if you want
             .setCornerRadius(10)
             // set success custom image
