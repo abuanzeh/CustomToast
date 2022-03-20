@@ -36,8 +36,8 @@ implementation 'com.github.abuanzeh:AnzehLibrary:1.0.5'
             .setGravityOfMessage(Gravity.TOP)
             //Message display time Toast.LENGTH_SHORT or Toast.LENGTH_LONG 
             .setDuration(Toast.LENGTH_SHORT)
-	      //set Text Color 
-	      .setTextColor()
+	    //set Text Color 
+	    .setTextColor()
             .build()  
             .showMessage()
 
